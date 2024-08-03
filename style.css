@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url("snake.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width:60vmin;
+    height:80vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(222, 239, 221);
+}
+.details{
+    color:rgb(4, 4, 4);
+    font-size: 1rem;
+    font-weight: 500;
+    padding:20px 27px;
+    display:flex;
+    justify-content: space-between;
+}
+.play-area{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template: repeat(30,1fr)/repeat(30,1fr);
+    background: rgb(167, 188, 131);
+}
+.play-area .food{
+    background: red;
+}
+.play-area .head{
+    background: rgb(23, 97, 23);
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+.controls i{
+    color:rgb(23, 23, 22);
+    padding:25px 0;
+    width: calc(100%/4);
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+    border-right: 1px solid black;
+}
