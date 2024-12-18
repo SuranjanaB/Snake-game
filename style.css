@@ -20,6 +20,14 @@ body{
     border-radius: 10px;
     background-color: rgb(222, 239, 221);
 }
+.image{
+    position: absolute;
+    height:150px;
+    width: 150px;
+    margin-right: 1110px;
+    margin-bottom: 500px;
+    border-radius: 50%;
+}
 .details{
     color:rgb(4, 4, 4);
     font-size: 1rem;
